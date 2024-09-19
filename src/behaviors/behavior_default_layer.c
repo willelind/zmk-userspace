@@ -173,7 +173,7 @@ BEHAVIOR_DT_INST_DEFINE(
     NULL,
     NULL,
     POST_KERNEL,
-    CONFIG_KERNEL_INIT_PRIORITY_DEFAULT,
+    CONFIG_KSCAN_INIT_PRIORITY,
     &behavior_default_layer_driver_api
 );
 
