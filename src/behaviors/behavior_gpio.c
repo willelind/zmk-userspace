@@ -37,7 +37,7 @@ static int behavior_gpio_init(const struct device *dev) {
         // initialize pin
         if (
             !gpio_is_ready_dt(gpio)
-            || gpio_pin_configure_dt(gpio, GPIO_OUTPUT) != 0
+            || gpio_pin_configure_dt(gpio, GPIO_OUTPUT_ACTIVE) != 0
         ) {
             LOG_ERR("gpio (%s) did not cooperate: extermine", dev->name);
             return -ENODEV;
